@@ -11,21 +11,24 @@
     </head>
     <body>
         <header>
-                <div class="search">
-                   <input type="text" class="searchCountry" placeholder="What country you looking for?">
-                   <button type="submit" class="searchButton">
-                     <i class="fa fa-search">search</i>
-                  </button>
-                </div>
+                
+                   <input type="text" id="name" placeholder="What country you looking for?"/>
+                   <button id="button" onclick="search()">search</button>
+                
         </header>
         
-        <section>
-            <div>
-                <div>flag</div>
-                <div>details</div>
-            </div>
+        <section class="main">
+                <div class ="left " id="flag"></div>
+                
+                 <div class="right" id="countryName"></div>
+                 <div class="right" id="postalCode"></div>
+                 <div class="right" id="region"></div>
+                
+                
+            
         </section>
 
-        <script src="./app.js" async defer></script>
+        <script src="./app.js"></script>
     </body>
 </html>
+
